@@ -1,0 +1,9 @@
+n=int(input())
+l1=[int(x) for x in input().split()]
+l2=[]
+for i in range(len(l1)-1):
+	l=l1[i+1::]
+	c=max(l)
+	l2.append(c)
+l2.append(0)
+print(*l2)
